@@ -1,0 +1,1049 @@
+﻿body {
+    position: relative;
+    font-family: 'Heebo', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+#container {
+    padding: 0;
+    min-height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#enterContainer {
+    padding: 0;
+    direction: rtl;
+    min-height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-image: url('../images/labrador.jpg');
+    background-size: 1080px;
+}
+
+.skip {
+    position: absolute;
+    top: -1000px;
+    right: -1000px;
+    height: 1px;
+    width: 1px;
+    text-align: left;
+    overflow: hidden;
+}
+
+a.skip:active,
+a.skip:focus,
+a.skip:hover {
+    right: 0;
+    top: 0;
+    left: 0;
+    width: 26%;
+    height: 48px;
+    overflow: visible;
+    color: white;
+    background-color: black;
+    padding: 5px;
+    text-decoration: none;
+    margin: auto;
+    text-align: center;
+    z-index: 1000;
+    font-size: 19pt;
+}
+/*תפריט ניווט*/
+.navbar-dark .navbar-toggler-icon {
+    background-image: url('../../images/accessibility.png');
+}
+
+#enterTopMenu {
+    /*background-color: #f6ba20;*/
+    background-image: url('../images/topMenuEnter.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /*-webkit-box-shadow: 0px 6px 34px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 6px 34px -11px rgba(0,0,0,0.75);
+    box-shadow: 0px 6px 34px -11px rgba(0,0,0,0.75);*/
+    height: 70px;
+    padding-top: 5px;
+    padding-right: 5px;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    /*clip-path: polygon(0 0, 100% 0, 100% 100%, 0 77%);*/
+    /*-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 77%);*/
+}
+
+#topMenu {
+    /*background-color: #f6ba20;*/
+    background-image: url('../images/topMenu.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /*-webkit-box-shadow: 0px 6px 34px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 6px 34px -11px rgba(0,0,0,0.75);
+    box-shadow: 0px 6px 34px -11px rgba(0,0,0,0.75);*/
+    height: 70px;
+    padding-top: 5px;
+    padding-right: 5px;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    /*clip-path: polygon(0 0, 100% 0, 100% 77%, 0 100%);*/
+    /*-webkit-clip-path: polygon(0 0, 100% 0, 100% 77%, 0 100%);*/
+}
+
+@media (min-width: 576px) {
+    #topMenu, #enterTopMenu {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    #topMenu, #enterTopMenu {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    #topMenu, #enterTopMenu {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #topMenu, #enterTopMenu {
+        max-width: 1140px;
+    }
+}
+
+/*תפריט כניסה תחתון*/
+#EnterMenu {
+    /*clip-path: polygon(0 51%, 100% 0, 100% 100%, 0% 100%);*/
+    /*-webkit-clip-path: polygon(0 51%, 100% 0, 100% 100%, 0% 100%);*/
+    /*background-color: #f6ba20;*/
+    background-image: url('../images/footerEnter.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: fixed;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1030;
+    bottom: 0;
+    height: 100px;
+}
+
+#enterBut {
+    background: url(../images/enter.png);
+    width: 100px;
+    height: 100px;
+    text-align: right;
+    border: none;
+    background-size: 218px;
+    background-repeat: no-repeat;
+    font-size: 16pt;
+    padding: 0px 7px 18px;
+    position: absolute;
+    bottom: 30px;
+    left: 45%;
+}
+
+    #enterBut:hover {
+        background-position-x: -106px;
+    }
+
+.myHidden {
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    overflow: hidden;
+    top: -10em;
+}
+
+#aboutBut {
+    display: inline-block;
+    float: right;
+    width: 100px;
+    height: 100px;
+    margin-top: -28px;
+    background: url(../images/about.png);
+    background-position-x: 10px;
+    border: none;
+    background-size: 590px;
+    color: white;
+    padding-bottom: 12px;
+    padding-left: 9px;
+}
+
+    #aboutBut:hover {
+        background-position-x: -150px;
+    }
+
+
+.myli {
+    display: inline-block;
+    float: right;
+    margin-right: 10px;
+}
+
+
+.size {
+    color: #1d3666;
+    width: 42px;
+    text-align: center;
+    line-height: 20px;
+    position: relative;
+    margin-left: -9px;
+    font-size: 16px;
+}
+
+.sizeBtn {
+    height: 28px;
+    margin-top: 7px;
+    padding-top: 1px;
+    margin-right: 8px;
+}
+
+.plus {
+    width: 56px;
+    height: 60px;
+    margin-top: -16px;
+    background: url(../images/plusText.png);
+    border: none;
+    background-size: 415px;
+    background-position-x: -40px;
+}
+
+    .plus:hover {
+        background-position-x: -124px;
+    }
+
+.minus {
+    width: 56px;
+    height: 60px;
+    margin-top: -16px;
+    background: url(../images/MinusText.png);
+    border: none;
+    background-size: 415px;
+    background-position-x: -40px;
+    position: relative;
+    margin-right: -18px;
+}
+
+    .minus:hover {
+        background-position-x: -124px;
+    }
+
+.contrast {
+    color: #1d3666;
+    width: 57px;
+    line-height: 20px;
+    position: relative;
+    margin-left: -18px;
+    margin-right: 32px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.contrastBtn {
+    width: 56px;
+    height: 60px;
+    margin-top: -16px;
+    background: url(../images/contrsat.png);
+    border: none;
+    background-size: 415px;
+    background-position-x: -41px;
+    position: relative;
+    margin-right: 22px;
+}
+
+    .contrastBtn:hover {
+        background-position-x: -125px;
+    }
+
+#accessibilityDiv {
+    float: left;
+    width: 340px;
+    margin-top: 6px;
+}
+
+#accWindow {
+    width: 90%;
+    padding: 50px 0 0;
+    background-color: #eae9e7;
+    -webkit-box-shadow: 0px 6px 34px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 6px 34px -11px rgba(0,0,0,0.75);
+    box-shadow: 0px 6px 34px -11px rgba(0,0,0,0.75);
+    position: fixed;
+    margin-top: 90px;
+    left: 5%;
+    z-index: 99;
+    border-radius: 8px;
+    color: #1d3666;
+}
+
+
+.popupH2 {
+    font-size: 13px;
+    text-align: center;
+    margin-top: -41px;
+    margin-bottom: 20px;
+}
+
+#sizeWin {
+    margin-top: 54px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+#contrastWin {
+    display: block;
+    width: 96px;
+    text-align: center;
+    margin: auto;
+    margin-top: 27px;
+}
+
+#aboutWindow {
+    width: 100%;
+    padding: 14px;
+    background-color: #5b98aa;
+    -webkit-box-shadow: 0px 6px 34px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 6px 34px -11px rgba(0,0,0,0.75);
+    box-shadow: 0px 6px 34px -11px rgba(0,0,0,0.75);
+    position: absolute;
+}
+
+#closeAboutWin {
+    display: inline-block;
+    float: right;
+}
+
+#sizeDivWin {
+    text-align: center;
+    margin: auto;
+}
+
+    #sizeDivWin button {
+        margin-top: -4px;
+    }
+
+#contrastDivWin {
+    text-align: center;
+}
+
+#contrastBtnWin {
+    margin: auto;
+    margin-top: -4px;
+}
+
+#accBut {
+    float: left;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background: url(../images/accessibility.png);
+    background-position-x: 10px;
+    border: none;
+    background-size: 590px;
+    top: -22px;
+    left: 0;
+}
+
+    #accBut:hover {
+        background-position-x: -151px;
+    }
+
+#enterAccBut {
+    float: right;
+    width: 100px;
+    height: 100px;
+    margin-top: -105px;
+    margin-right: 83px;
+    background: url(../images/accessibility.png);
+    background-position-x: 10px;
+    border: none;
+    background-size: 590px;
+}
+
+enterAccBut:hover {
+    background-position-x: -150px;
+}
+
+
+.closeBut {
+    width: 56px;
+    height: 44px;
+    background: url(../images/close.png);
+    background-position-x: 0px;
+    border: none;
+    background-size: 220px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 10px;
+}
+
+    .closeBut:hover {
+        background-position-x: -56px;
+        /*background-position-y: -1px;*/
+    }
+
+
+
+/*כותרת כניסה*/
+#name {
+    margin-top: 5px;
+    font-size: 41pt;
+    margin-bottom: -3px;
+}
+
+#explaination {
+    text-align: center;
+    font-size: 24pt;
+    margin-bottom: 5px;
+}
+
+#enterDiv {
+    color: #1d3666;
+    border-top: 2px solid #1d3666;
+    border-bottom: 2px solid #1d3666;
+    width: 345px;
+    text-align: center;
+    margin: auto;
+    transform: translateY(255%);
+}
+
+/*לוגו*/
+
+#logoDiv {
+    float: right;
+}
+
+#logoName {
+width: 69px;
+    display: inline-block;
+    color: #1d3666;
+    text-align: center;
+    font-weight: bold;
+}
+
+#logoPic {
+    width: 50px;
+    display: inline-block;
+    margin-top: -26px;
+}
+
+/*אקורדיון*/
+.mb-0 {
+    color: #1D3666;
+    font-size: 20px;
+    padding-right: 25px;
+    text-align: right;
+}
+
+    .mb-0:hover {
+        text-decoration: underline solid #1D3666;
+    }
+
+.accorBtns {
+    border: none;
+    background-color: transparent;
+}
+
+.card {
+    border: none;
+}
+
+.card-header > button:before {
+    float: right !important;
+    content: "\2013";
+    color: #1D3666;
+    font-size: 27px;
+    font-weight: bolder;
+    position: absolute;
+    margin-top: -6px;
+    right: 20px;
+}
+
+
+.card-header > button.collapsed:before {
+    float: right !important;
+    content: "+";
+}
+
+
+
+/*מבוא*/
+#myH1 {
+    margin-right: 10px;
+    margin-bottom: 12px;
+    display: block;
+    text-align: right;
+    margin-top: 70px;
+}
+
+
+#WelcomeTxt {
+    margin-top: 30px;
+    font-size: large;
+}
+
+#instructions {
+    margin-top: 155px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16pt;
+}
+
+
+.footer {
+    /*-webkit-box-shadow: 0px -4px 34px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -4px 34px -11px rgba(0,0,0,0.75);
+    box-shadow: 0px -4px 34px -11px rgba(0,0,0,0.75);*/
+    height: 50px;
+    /*background-color: #f6ba20;*/
+    position: fixed;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1030;
+    bottom: 0;
+    background-image: url('../images/footer.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /*clip-path: polygon(0 21%, 100% 0, 100% 100%, 0% 100%);*/
+    /*-webkit-clip-path: polygon(0 21%, 100% 0, 100% 100%, 0% 100%);*/
+}
+
+
+@media (min-width: 576px) {
+    .footer, #EnterMenu, #arrows {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer, #EnterMenu, #arrows {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .footer, #EnterMenu, #arrows {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .footer, #EnterMenu, #arrows {
+        max-width: 1140px;
+    }
+}
+
+button {
+    cursor: pointer;
+}
+
+#content {
+    padding-bottom: 70px;
+    direction: rtl;
+    color: #1d3666;
+    font-size: 21px;
+}
+
+#SkipH1 {
+    margin-top: 75px;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+/*פוטר*/
+#backBtn {
+    /*display: inline-block;*/
+    float: right;
+    width: 50px;
+    height: 63px;
+    background: url(../images/back.png);
+    border: none;
+    background-size: 206px;
+    background-position-x: -0.5px;
+}
+
+    #backBtn:hover {
+        background-position-x: -52px;
+    }
+
+#backText {
+    float: right;
+    margin-top: 24px;
+}
+
+#forwardBtn {
+    float: left;
+    width: 50px;
+    height: 63px;
+    background: url(../images/forward.png);
+    border: none;
+    background-size: 206px;
+    background-position-x: -0.5px;
+}
+
+    #forwardBtn:hover {
+        background-position-x: -52px;
+    }
+
+#forwardText {
+    float: left;
+    margin-top: 24px;
+}
+
+#arrows {
+    color: #1d3666;
+    z-index: 2000;
+    height: 64px;
+    position: fixed;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 0;
+}
+
+
+/*מסך אודות*/
+#HitLogo {
+    width: 123px;
+    /* float: right; */
+    /* margin-top: -90px; */
+    display: inline-block;
+    position: absolute;
+    margin-top: 30px;
+}
+
+#odotH {
+    text-align: right;
+    font-size: 14pt;
+}
+
+#nameP {
+    text-align: center;
+    font-size: 22pt;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+#nameExp {
+    margin-top: -15px;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#projectA {
+    text-align: center;
+    /* margin: auto; */
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-top: -15px;
+}
+
+    /* Add a color on mouse-over */
+    #projectA:hover {
+        color: #01447e;
+        text-decoration: underline;
+    }
+
+#projectH {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#hitDiv {
+    text-align: center;
+    position: relative;
+}
+
+#team {
+    text-align: right;
+    margin-top: 32px;
+    display: inline-block;
+    /* position: sticky; */
+    margin-right: 131px;
+}
+
+#guideDogCenter {
+    text-align: right;
+}
+
+#googleMap {
+    width: 100%;
+    height: 250px;
+}
+
+/*מסך הבית*/
+.chapters {
+    width: 90%;
+    height: 86%;
+    margin: auto;
+    display: table;
+    margin-bottom: 10px;
+}
+
+.myRow {
+    padding: 30px;
+}
+
+    .myRow div {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+.toDo {
+    font-weight: bold;
+}
+
+#prepareCourseBtn {
+    width: 79px;
+    height: 77px;
+    background: url(../images/prepareCourse.png);
+    border: none;
+    background-size: 170px;
+    background-repeat: no-repeat;
+    background-position-x: 5px;
+}
+
+    #prepareCourseBtn:hover {
+        background-position-x: -91px;
+    }
+
+
+
+#courseContentBtn {
+    width: 79px;
+    height: 77px;
+    background: url(../images/courseContent.png);
+    border: none;
+    background-size: 170px;
+    background-repeat: no-repeat;
+    background-position-x: 5px;
+}
+
+    #courseContentBtn:hover {
+        background-position-x: -91px;
+    }
+
+#lifeDogBtn {
+    width: 79px;
+    height: 77px;
+    background: url(../images/lifeDog.png);
+    border: none;
+    background-size: 170px;
+    background-repeat: no-repeat;
+    background-position-x: 5px;
+}
+
+    #lifeDogBtn:hover {
+        background-position-x: -91px;
+    }
+
+
+/*עמוד הכנה לקורס*/
+#tipsBtn {
+    width: 79px;
+    height: 77px;
+    background: url(../images/tips.png);
+    border: none;
+    background-size: 170px;
+    background-repeat: no-repeat;
+    background-position-x: 5px;
+}
+
+    #tipsBtn:hover {
+        background-position-x: -91px;
+    }
+
+#rulesBtn {
+    width: 79px;
+    height: 77px;
+    background: url(../images/rules.png);
+    border: none;
+    background-size: 170px;
+    background-repeat: no-repeat;
+    background-position-x: 5px;
+}
+
+    #rulesBtn:hover {
+        background-position-x: -91px;
+    }
+
+#knowCampusBtn {
+    width: 79px;
+    height: 77px;
+    background: url(../images/knowCampus.png);
+    border: none;
+    background-size: 170px;
+    background-repeat: no-repeat;
+    background-position-x: 5px;
+}
+
+    #knowCampusBtn:hover {
+        background-position-x: -91px;
+    }
+
+/*עמוד טיפים לקראת הקורס*/
+
+
+#prepareMantallyBtn {
+    width: 79px;
+    height: 77px;
+    background: url(../images/prepareMantally.png);
+    border: none;
+    background-size: 170px;
+    background-repeat: no-repeat;
+    background-position-x: 5px;
+}
+
+    #prepareMantallyBtn:hover {
+        background-position-x: -91px;
+    }
+
+#prepareOrientationBtn {
+    width: 79px;
+    height: 77px;
+    background: url(../images/prepareOrientation.png);
+    border: none;
+    background-size: 170px;
+    background-repeat: no-repeat;
+    background-position-x: 5px;
+}
+
+    #prepareOrientationBtn:hover {
+        background-position-x: -91px;
+    }
+
+.myAcor {
+    border: none;
+    border-radius: 0;
+    text-align: right;
+    font-size: 16px;
+    margin: auto;
+}
+
+    .myAcor p {
+        text-align: right;
+    }
+
+.nav-item {
+    width: 50%;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+/*פירורי לחם*/
+ul.breadcrumbs {
+    padding: 0px 4px;
+    list-style: none;
+    text-align: right;
+    color: #1d3666;
+    margin-top: -15px;
+}
+
+    /* Display list items side by side */
+    ul.breadcrumbs li {
+        display: inline;
+        font-size: 15px;
+    }
+
+        /* Add a slash symbol (/) before/behind each list item */
+        ul.breadcrumbs li + li:before {
+            padding: 5px;
+            content: ">";
+        }
+
+        /* Add a color to all links inside the list */
+        ul.breadcrumbs li a {
+            color: #b23326;
+            text-decoration: none;
+        }
+
+            /* Add a color on mouse-over */
+            ul.breadcrumbs li a:hover {
+                text-decoration: underline;
+            }
+
+/*עמוד הכרת הקמפוס*/
+#knowRoomBtn {
+    width: 79px;
+    height: 77px;
+    background: url(../images/knowRoom.png);
+    border: none;
+    background-size: 170px;
+    background-repeat: no-repeat;
+    background-position-x: 5px;
+}
+
+    #knowRoomBtn:hover {
+        background-position-x: -91px;
+    }
+
+#servicesBtn {
+    width: 79px;
+    height: 77px;
+    background: url(../images/services.png);
+    border: none;
+    background-size: 170px;
+    background-repeat: no-repeat;
+    background-position-x: 5px;
+}
+
+    #servicesBtn:hover {
+        background-position-x: -91px;
+    }
+
+#staffBtn {
+    width: 79px;
+    height: 77px;
+    background: url(../images/staff.png);
+    border: none;
+    background-size: 170px;
+    background-repeat: no-repeat;
+    background-position-x: 5px;
+}
+
+    #staffBtn:hover {
+        background-position-x: -91px;
+    }
+
+/*עמוד הכרת החדר*/
+#room {
+    margin: auto;
+    position: relative;
+    display: inline-block;
+}
+
+#roomPic {
+    display: block;
+    /*margin: auto;*/
+    width: 462px;
+}
+
+.hotspotBtn {
+    width: 90px;
+    height: 80px;
+    background: url(../images/hotspot.png);
+    border: none;
+    background-size: 280px;
+    background-repeat: no-repeat;
+    background-position-x: -58px;
+    position: absolute;
+}
+
+    .hotspotBtn:hover {
+        background-position-x: -170px;
+    }
+
+#bethroom {
+    right: 8%;
+    top: 28%;
+}
+
+#desk {
+    right: 40%;
+    top: 77%;
+}
+
+#bed {
+    right: 35%;
+    top: 20%;
+}
+
+.hotspotWin {
+    width: 50%;
+    padding: 20px 20px 0;
+    background-color: #eae9e7;
+    -webkit-box-shadow: 0px 6px 34px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 6px 34px -11px rgba(0,0,0,0.75);
+    box-shadow: 0px 6px 34px -11px rgba(0,0,0,0.75);
+    position: absolute;
+    top: 3%;
+    right: 22%;
+    z-index: 98;
+    border-radius: 8px;
+    height: 580px;
+    overflow: auto;
+}
+
+
+
+.hotspotWin img {
+    display: block;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 575px) {
+    #instructions {
+        margin-top: 200px;
+    }
+
+    #enterContainer {
+        background-position-x: -70px;
+    }
+}
+
+@media screen and (max-width: 574px) {
+    #instructions {
+        margin-top: 15px;
+    }
+
+    #enterContainer {
+        background-position-x: -323px;
+        background-position-y: 40px;
+        background-size: 907px;
+    }
+
+    #name {
+        font-size: 31pt;
+    }
+
+    #explaination {
+        font-size: 18pt;
+    }
+
+
+    #enterDiv {
+        width: 275px;
+    }
+
+    #enterBut {
+        left: 36%;
+    }
+
+    a.skip:active,
+    a.skip:focus,
+    a.skip:hover {
+        width: 47%;
+    }
+
+    #roomPic {
+        width: 100%;
+    }
+
+    .hotspotWin {
+        width: 90%;
+        right: 5%;
+        height: 742px;
+    }
+}
